@@ -1,0 +1,394 @@
+<!-- syntax
+      <!DOCTYPE html>
+  <html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+  </head>
+  <body>
+     
+  </body>
+  </html>
+     
+     
+     
+     HTML-defines content of the site
+     CSS-defines styling or styles of the site 
+     JAVASCRIPT-provides interactivity
+     Dom (document object model)tree-the heirarchy and structure of html elements,often used for targeting elements in css and javascripts
+-->
+
+<!--
+     TAGS
+
+     <p>paragraph tag </p>-full line is known as element
+     <h1-h6></h1-h6>-headline tag
+     <article></article>-article tag
+     <p>hi hello<em>what hi</em></p> em -nested inside p
+     <i></i>-visual-only italics
+     <em></em>-emphasis italics tag
+     <strong></strong>-strong tag used for importance,urgency.seriousness
+     <b></b>-bold tag (without importance)
+     <blockquote></blockquote>will add spaces between four sides
+     <q></q>create doublequotes between text
+     <abbr>-<abbr title="world health organization">who</abbr>-generally used for abbrevation
+     <cite></cite>-defines title of creative work and usually renders in italic
+     <time></time>-time tag
+     <address>-<address>WrittenbyJohnDoe.<br>Visitusat:<br>Example.com<br>Box 564, Disneyland<br> USA</address>-used for address purpose
+     <element name attribute name="">   -- <time datetime="2021-10-06">2 days ago</time>
+     <code></code>-used 2 define a pieceofcomputerscode.content inside isdisplayed in browsers default monospacefont.italso supports global attributes like class,id etc
+     <br>-line break tag-creates line space or break the line
+     <pre></pre>- defines preformatted text-itdisplay exactly as written in html source code example:poem(line by line)
+     <sub>subscripts</sub>-characters that are set below the baseline
+     <sup>superscripts</sup>-characters that are set above the baseline
+     <small></small>-to convey something that has very little importance
+     <style>-<p style="color: red; font-size: large;">hiiiiiiiii</p>-style tag which nested inside p tag .
+     <title>-<p title="hello">good</p>-hello will display when we move cursor over good
+     <style>-<body style="background-color: bisque;">-we can also add style in body or in any tags  like this
+     (for center text)<h1 style="text-align:center;">Centered Heading</h1>-we can also set text at center like this using style
+     <mark>-<p>hi <mark>anitha</mark></p>-it will mark anitha in yellow colour
+     <del>-<p> hi <del>anitha</del></p>-it will just strike out anitha
+     <ins>-<p>My favorite color is <ins>red</ins>.</p>-it will just add text and underline red which has ins tag
+     <bdo dir="rtl">anitha</bdo>-it write bidirectional(right to left or left to right)
+     border color- <h1 style="border:2px solid DodgerBlue;">Hello World</h1>-we also give border color like this
+-->
+
+<!--
+     LIST
+    1.unordered list-<ul></ul>-list item-it will create dots before each data and  create space automatically before dots
+         <li></li>-list item-display data one by one with dots,if we want to change dot or numbers means we have to use ol,ul,dl
+    2.ordered list-<ol></ol>-it will create numbers like 1,2,3 before each data and  create space automatically before dots
+    3.definition or description list
+           <dl>definition list</dl>   
+           <dt>definition term</dt>
+           <dd>definition description</dd>
+        syntax-  <dl>
+            <dt></dt>
+            <dd></dd>
+                </dl>
+               -->
+
+<!--  -comment 
+      just click ctrl+/ (comment) -used for hide content,Comments can be used to hide parts in the middle of the HTML code.ie inline comment
+-->
+
+<!-- 
+     Html homepage
+
+The doctype declaration- declares which era this html file is form
+
+<! Doctype html>
+<html lang ="ar" Dir="ltr">
+<head>
+</head>
+<body>
+</body>
+</html>
+
+Head -element that contains information the browser needs to know, though it won't be displayed on the page
+
+Body-element that contains the information and that will be displayed on the page -->
+
+<!--
+      Document head
+
+Meta element-only used inside a head, conveys metadata about the page
+
+Title element-used to name a browser
+
+Link element-links to a range of other asset we want to load like css files, fonts and fevicons
+
+Rel  attribute-tells the attribute which kind of asset it is
+
+Href attribute-provides the url of the asset
+<link href= "main.css" rel = "stylessheet">
+<link rel= "icon" href ="favicon.icon">
+
+Script   element-tells a browser to load a javascript file -->
+
+<!--
+      Structuring content(body)
+
+Main, header, footer, article, aside and section
+
+Main element - wraps around the main content of the page, it only used only once
+
+Header and footer element-used to mark places on the page where the content is a header or a footer
+
+header element-used to wrap headers in the content
+
+Head-part of the html tag that never get displayed to the user
+
+Article element-wrapped around any instance of an article
+
+Section element -used to wrap sections in the content
+
+Aside element- marks content that is off to the side or not the attraction -->
+
+<!-- 
+     universal  attribute
+
+lang ="" (Language attribute) - gives us a way to tell a browser what language the content is it
+
+Dir attribute-gives us a way to explicitly tell the browser in which direction the text flows
+
+Dir-stands for direction
+Dir="ltr" for scripts that run left to right
+Dir=rtl for right to left
+
+<html lang ="ar" Dir="rtl"> -->
+<!-- 
+Global attributes-attrubutes-attrubutes that can be applied to any html element
+
+ useful global attribute
+1 . Class  attribute-allows us to target all elements with that class in our  javascript or css to apply styling
+
+2 .id attribute-allows us to target unique element with that id in our javascript or css
+
+Div-is a block line element
+Span- is a inline element
+
+Charset attribute-defines the alphabet or set of characters for the script language -->
+
+<!-- 
+     Aria roles-Accessible Rich Internet Applications-html attributes that provide accessible information about that specific content. ARIA attributes can be used to make unsemantic HTML more accessible to screen reader users
+For entity and character  -refer w3 school website
+Non breaking space- &nbsp-line will never break <p>hi hello &nbsp anitha</p> -->
+
+<!-- 
+     Links
+To make a link we use A element, a stands for anchor
+<a href="http:/www.google.com">anything</a>-test it
+
+Href-hypertext reference-this attribute point to where we want the link to go .. We have to include http://
+Http-hypertext transport  protocol
+Https-hypertext transport protocol secure
+
+Url paths
+. / -will load  file Or image inside folder
+../ -will load  file Or image outside folder
+
+Img
+<img>
+3 attributes:src, alt , width and height
+
+Src- <img src="image.jpg">-tells  browser which image file to load
+Alt- <img  src="image.jpg" alt="black dog">-used for people who is blind. It reads the text aloud
+Width and height- <img  src="image.jpg" alt="black dog" Width="400" Height="300"> -->
+
+<!-- 
+     Image formats
+
+1 . GIF-does well compressing Large areas of a single color
+-Limited color space of 256 colors
+-Can do transparency with jagged edges
+-Can have multiple frames, and make a little movie
+2. SVG(scalable vector graphic) - great for logos , icons etc
+-vector file
+3.JPG -Image format for compressing photos
+-can be  compressed
+-size vs quality
+4.PNG-image that need transparency
+-good at compression
+-photos and images
+-depends on the use case -->
+
+<!--
+      Responsive images(px)
+
+Srcset-sourceset attribute-allows you to specify multiple files to be used based on either viewport width or imagepixel width
+<img  src="image.jpg" alt="black dog" Width="400" Height="300"
+srcset="image.jpg 2x
+srcset=image.jpg 3x
+srcset=image.jpg 4x "> -->
+
+<!--
+      Responsive width
+
+Sizes attribute-list which sizes image to use at which media query
+<img  src="image.jpg" alt="black dog" Width="400" Height="300"
+srcset="image.jpg 480w
+srcset="image.jpg 960w
+srcset="image.jpg 1920w"
+>
+480w means 480 pixels wide -->
+
+<!--
+      Responsive pictures
+1st technique
+<picture>
+<source media="(min-width:600px)"srcset="image.jpg">
+<source srcset="image.jpg">
+<img  src="image.jpg" alt="black dog" Width="400" Height="300">
+</picture>
+2nd technique
+<picture>
+<source media="(min-width:600px)"
+srcset="image.jpg 320w
+srcset=image.jpg 480w
+srcset=image.jpg 720w
+srcset=image.jpg 960w
+srcset=image.jpg 1440w
+srcset=image.jpg 1920w">
+<source srcset="image.jpg 320w
+srcset=image.jpg  480w
+srcset=image.jpg 720w
+srcset=image.jpg 960w">
+<img  src="image.jpg" alt="black dog" Width="400" Height="300">
+</picture> -->
+
+<!--
+      Figure and figcaption
+
+Figure-for anything  that appears as a figure, illustrating something
+Figcaption-for demonstration of a concept which needs a caption
+Eg:
+<figure>
+<img  src="image.jpg" alt="black dog" Width="400" Height="300">
+<figcaption>hey hello.. </figcaption>
+</figure> -->
+
+<!--
+      Audio
+<audio controls src="audio.mp3"></audio>
+Other attributes:
+Loop-<audio controls src="audio.mp3" loop></audio>
+Autoplay-<audio controls src="audio.mp3" loop autoplay></audio> -->
+
+<!-- Video
+<video src="video.mp4" Controls></video> -->
+
+<!-- 
+     Captions and subtitles
+
+<video controls>
+<source src="video.mp4"type="video/webm">
+<track src="video.mp4"
+Kind="captions "
+Video="english"
+srclang="en"
+Default>
+Track-element used to create captions and subtitles
+</video> -->
+
+<!-- Embedding
+-placing content from one site into the body of a page on another site
+
+               --> 
+     
+<!-- 
+
+               HTML FORM AND TABLE
+               Notice that each input field must have a (name) attribute to be submitted.
+               Html form and table
+               <body>
+               <main>
+               <form action="success.html" Method="get">
+               <label for="name">Name</label>
+               <input name="name" id="name" Type="text " Value="ani">
+               <label for="email"> Email</label>
+               <input name="email" I'd ="email" Type="email" Placeholder="me@example.com" Required>
+               <button type ="submit ">signup</button>
+               <label for="lname">last Name</label>
+               <input id="name" Name="name" Type="text ">
+               <label for="date">date</label>
+               <input id="date" Name="date" Type="date ">
+               <label for="color">color</label>
+               <input id="color" Name="color" Type="color ">
+               <label for="file">file</label>
+               <input id="file" Name="file" Type="file " Accept= "image/*" multiple>
+               radio format:(id and value should be same)
+               <p>sports</p>
+               <input type="radio" name="sports" id="hockey" value="hockey">
+               <label for="hockey">hockey</label><br>
+               <input type="radio" name="sports" id="cricket" value="cricket">
+               <label for="cricket">cricket</label>
+               checkbox format:
+               <p>makeup</p>
+               <input type="checkbox" name="mascara" id="mascara" >
+               <label for="">mascara</label>
+               <input type="checkbox" name="kajal" id="kajal" >
+               <label for="">kajal</label>
+               select format:
+               <label for="cars">Choose a car:</label>
+               <select id="cars" name="cars">
+               <option value="volvo">Volvo</option>
+               <option value="saab">Saab</option>
+               </select>
+               textarea format:
+               <p><textarea name="" id="" cols="30" rows="10"></textarea></p>
+               button type with alert format:
+               <button type="button" onclick="alert('hi')">click me</button>
+               <fieldset>-cover four sides with line
+               <legend>have words and then cover with line
+               <datalist> format-same like select but have little different
+               <input list="cookies">
+               <datalist id="cookies">
+               <option value="good day">
+               <option value="jim jamm">
+               <option value="nutrichoice">
+               </datalist>
+               color-<input type="color" name="" id="" >
+               submit alternative we can place any image like this
+               <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+               file upload
+               <input type="file" id="myfile" name="myfile">
+               Number
+               The <input type="number"> defines a numeric input field.
+               Month
+               The <input type="month"> allows the user to select a month and year.
+               Input Type Hidden
+              The <input type="hidden"> defines a hidden input field (not visible to a user).
+               
+               Html table
+               
+               - we use Table, tr, td, th
+               <table></table>-table element wraps the whole table
+               <tr></tr>-table row-wraps around a set of element, defining themselves belongs to the same row
+               <th></th>-table header-defines a header for a column
+               <td></td>-table data-marks up the cell of the data
+               
+
+               <table border="1"
+               <table>
+               <tr>
+               <th>name</th>
+               <th>doet</th>
+               <th>xolor</th>
+               <th>photo</th>
+               </tr>
+               <tr>
+               <td>america fish</td>
+               <td>yellow</td>
+               <td>seeds</td>
+               <td><img src="image.jpg" Width ="400px" Height="200 px"</td>
+               </tr>
+               <tr>
+               <td>america fish</td>
+               <td>yellow</td>
+               <td>seeds</td>
+               <td><img src="image.jpg" Width ="400px" Height="200 px"</td>
+               </tr>
+               <tr>
+               <td>america fish</td>
+               <td>yellow</td>
+               <td>seeds</td>
+               <td><img src="image.jpg" Width ="400px" Height="200 px"</td>
+               </tr>
+               <tr>
+               <td>america fish</td>
+               <td>yellow</td>
+               <td>seeds</td>
+               <td><img src="image.jpg" Width ="400px" Height="200 px"</td>
+               </tr>
+               <tr>
+               <td>america fish</td>
+               <td>yellow</td>
+               <td>seeds</td>
+               <td><img src="image.jpg" Width ="400px" Height="200 px"</td>
+               </tr>
+               </table> -->
+
+               
